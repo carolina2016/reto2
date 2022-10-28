@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --verde: green;
+    --azul: aqua;
+    --degradado: linear-gradient{90deg, var--azul, var--verde};
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--azul);
+    color: white;
+}
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+body{
+    background: whitesmoke;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem ;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: greenyellow;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(--verde);
+}
+
+header .logo span{
+    color: var(--azul) ;
+}
+
+header .navbar a{
+    font-size: 1.9rem; 
+    margin-left: 2rem;
+    color: var(--verde);
+}
+
+header .navbar a:hover{
+    color: var(--azul);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+.Inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inicio .image img{
+    width: 30vw;
+}
+
+.Inicio .content h3{
+    font-size: 5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.Inicio .content h3 span{
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
+.Inicio .content p{
+    font-size: 1.7rem;
+    color: gray;
+    padding: 1rem 0;
+}
+
+.Restaurantes .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Restaurantes .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.Restaurantes .caja-contenedor .caja img{
+    height: 15rem;
+}
+
+.Restaurantes .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.Restaurantes .caja-contenedor .caja p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+} 
+
+.hoteles .columna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hoteles .columna .image{
+    flex: 1 1 30rem;
+}
+
+.hoteles .columna .image{
+    width: 20%;
+    height: 15%;
+    
+}
+
+.hoteles .columna .content{
+    flex: 1 1 30rem;
+}
+
+.hoteles .columna .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+
+.hoteles .columna .content p{
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.Que_Hacer .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Que_Hacer .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.Que_Hacer .caja-contenedor .caja img{
+    height: 20rem;
+}
+
+.Que_Hacer .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.Que_Hacer .caja-contenedor .caja p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+} 
+
+.footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    flex: 1 1 25rem;
+}
+
+.footer .caja-contenedor .caja h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .caja-contenedor .caja p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: black;
+}
+
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1 rem 2 rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    .btn:hover{
+        transform: scale(1.1);
+    }
+
+    
+
+    .heading{
+        text-align: center;
+        background: var(--verde);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        padding: 1rem;
+
+    }
+
+    
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+    .SanAndres{
+        flex-flow: column-reverse;
+    }
+
+    .SanAndres .image img{
+        width: 100%;
+    }
+
+    .SanAndres .content h3{
+        font-size: 3 .6rem;
+    }
+
+    .SanAndres .content p{
+        font-size: 1 .5rem;
+    }
+        
+@media(max-width:768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
